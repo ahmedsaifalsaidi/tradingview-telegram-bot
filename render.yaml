@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: tradingview-telegram
+    env: python
+    buildCommand: ""
+    startCommand: python app.py
+    envVars:
+      - key: TELEGRAM_TOKEN
+        value: 7558759844:AAFyOa5gt74e5sFoysIlWmA1Xm_3paKv_QE
+      - key: CHAT_ID
+        value: 123456789  # <-- ضع هنا الـ Chat ID الخاص بك
